@@ -1,0 +1,79 @@
+/* تنسيق شريط التنقل (Navbar) */
+.navbar {
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1abc9c;
+}
+
+/* قائمة المهارات */
+.skills-list {
+    list-style: disc;
+    margin-right: 20px;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+/* شبكة الخدمات */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.service-box {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 6px;
+    border-right: 4px solid #1abc9c;
+}
+
+.service-box h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.contact-info {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.contact-info a {
+    color: #1abc9c;
+    text-decoration: none;
+}
