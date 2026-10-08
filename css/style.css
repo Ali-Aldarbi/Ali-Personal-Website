@@ -394,3 +394,7 @@ html[dir="ltr"] .about-text {
     text-align: left;
     unicode-bidi: isolate;
 }
+/* محاذاة أزرار المهارات لليسار عند تفعيل اللغة الإنجليزية */
+html[dir="ltr"] .skills-flex {
+    justify-content: flex-start;
+}
