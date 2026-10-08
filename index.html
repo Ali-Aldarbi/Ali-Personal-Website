@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" id="html-root">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>علي الدربي | مطور ومهندس دعم فني</title>
+    <title id="page-title">علي الدربي | مطور ومهندس دعم فني</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,15 +11,18 @@
     <!-- شريط التنقل العائم العصري (Floating Navbar) -->
     <nav class="floating-nav">
         <div class="nav-content">
-            <a href="#" class="nav-logo">علي الدربي</a>
+            <a href="#" class="nav-logo" data-ar="علي الدربي" data-en="Ali Aldarbi">علي الدربي</a>
             <ul class="nav-links">
-                <li><a href="#about">نبذة عني</a></li>
-                <li><a href="#experience">الخبرات</a></li>
-                <li><a href="#projects">المشاريع</a></li>
-                <li><a href="#education">التعليم</a></li>
-                <li><a href="#skills">المهارات</a></li>
+                <li><a href="#about" data-ar="نبذة عني" data-en="About">نبذة عني</a></li>
+                <li><a href="#experience" data-ar="الخبرات" data-en="Experience">الخبرات</a></li>
+                <li><a href="#projects" data-ar="المشاريع" data-en="Projects">المشاريع</a></li>
+                <li><a href="#education" data-ar="التعليم" data-en="Education">التعليم</a></li>
+                <li><a href="#skills" data-ar="المهارات" data-en="Skills">المهارات</a></li>
             </ul>
-            <a href="#contact" class="nav-btn">تواصل معي ↗</a>
+            <div class="nav-actions">
+                <button id="lang-toggle" class="lang-btn" onclick="toggleLanguage()">EN</button>
+                <a href="#contact" class="nav-btn" data-ar="تواصل معي ↗" data-en="Contact ↗">تواصل معي ↗</a>
+            </div>
         </div>
     </nav>
 
@@ -28,10 +31,10 @@
         <div class="hero-glow"></div>
         <div class="container hero-container">
             <div class="availability-badge">
-                <span class="dot-live"></span> متاح للعمل
+                <span class="dot-live"></span> <span data-ar="متاح للعمل والاستشارات التقنية" data-en="Available for Work & Tech Consulting">متاح للعمل والاستشارات التقنية</span>
             </div>
-            <h1>مطور برمجيات ومهندس دعم فني</h1>
-            <p class="hero-desc">خبير ومستشار تنفيذ أنظمة الموارد المؤسسية (ERP) وتطوير الأنظمة وتصميم واجهات المستخدم بخبرة دولية في السودان، اليمن، وتنزانيا.</p>
+            <h1 data-ar="مطور برمجيات ومهندس دعم فني" data-en="Software Developer & Technical Support Engineer">مطور برمجيات ومهندس دعم فني</h1>
+            <p class="hero-desc" data-ar="خبير ومستشار تنفيذ أنظمة الموارد المؤسسية (ERP) وتطوير الأنظمة وتصميم واجهات المستخدم بخبرة دولية في السودان، اليمن، وتنزانيا." data-en="Expert & ERP Implementation Consultant, Systems Developer, and UI/UX Designer with international experience across Sudan, Yemen, and Tanzania.">خبير ومستشار تنفيذ أنظمة الموارد المؤسسية (ERP) وتطوير الأنظمة وتصميم واجهات المستخدم بخبرة دولية في السودان، اليمن، وتنزانيا.</p>
             
             <!-- عناصر عائمة جمالية مستوحاة من التصميم -->
             <div class="floating-tags">
@@ -48,27 +51,27 @@
     <!-- نبذة عني -->
     <section id="about" class="bento-section">
         <div class="container">
-            <h2>نبذة عني</h2>
-            <p class="about-text">محترف نظم، مطور أنظمة، واختصاصي دعم فني وهندسة أنظمة ERP بخبرة دولية واسعة. أمتلك سجلاً حافلاً في إدارة وتنسيق المشاريع الكبرى للقطاعات المالية، التجارية والصحية، مع دمج المهارات التقنية المتقدمة بتصميم واجهات المستخدم وتجربة المستخدم (UI/UX) لتقديم حلول برمجية متكاملة.</p>
+            <h2 data-ar="نبذة عني" data-en="About Me">نبذة عني</h2>
+            <p class="about-text" data-ar="محترف نظم، مطور أنظمة، واختصاصي دعم فني وهندسة أنظمة ERP بخبرة دولية واسعة. أمتلك سجلاً حافلاً في إدارة وتنسيق المشاريع الكبرى للقطاعات المالية، التجارية والصحية، مع دمج المهارات التقنية المتقدمة بتصميم واجهات المستخدم وتجربة المستخدم (UI/UX) لتقديم حلول برمجية متكاملة." data-en="Systems professional, developer, and ERP support specialist with extensive international experience. Proven track record in managing and coordinating major projects across financial, commercial, and healthcare sectors, integrating advanced technical skills with UI/UX design.">محترف نظم، مطور أنظمة، واختصاصي دعم فني وهندسة أنظمة ERP بخبرة دولية واسعة. أمتلك سجلاً حافلاً في إدارة وتنسيق المشاريع الكبرى للقطاعات المالية، التجارية والصحية، مع دمج المهارات التقنية المتقدمة بتصميم واجهات المستخدم وتجربة المستخدم (UI/UX) لتقديم حلول برمجية متكاملة.</p>
         </div>
     </section>
 
     <!-- الخبرات العملية -->
     <section id="experience" class="bento-section">
         <div class="container">
-            <h2>الخبرات العملية</h2>
+            <h2 data-ar="الخبرات العملية" data-en="Work Experience">الخبرات العملية</h2>
             <div class="cards-grid">
                 <div class="card-box">
                     <span class="card-date">07-2023  05-2026</span>
-                    <h3>مدير الدعم الفني وهندسة الأنظمة</h3>
-                    <span class="card-subtitle">Ultimate Solution — دار السلام، تنزانيا</span>
-                    <p>تنفيذ ودعم أنظمة شركة Ultimate Solution وتقديم الدعم الفني المتقدم وحل المشكلات التشغيلية لمختلف العملاء.</p>
+                    <h3 data-ar="مدير الدعم الفني وهندسة الأنظمة" data-en="Technical Support & Systems Engineering Manager">مدير الدعم الفني وهندسة الأنظمة</h3>
+                    <span class="card-subtitle" data-ar="Ultimate Solution — دار السلام، تنزانيا" data-en="Ultimate Solution — Dar es Salaam, Tanzania">Ultimate Solution — دار السلام، تنزانيا</span>
+                    <p data-ar="تنفيذ ودعم أنظمة شركة Ultimate Solution وتقديم الدعم الفني المتقدم وحل المشكلات التشغيلية لمختلف العملاء." data-en="Implementing and supporting Ultimate Solution systems, providing advanced technical support, and resolving operational issues for clients.">تنفيذ ودعم أنظمة شركة Ultimate Solution وتقديم الدعم الفني المتقدم وحل المشكلات التشغيلية لمختلف العملاء.</p>
                 </div>
                 <div class="card-box">
                     <span class="card-date">11-2019  04-2023</span>
-                    <h3>مهندس دعم فني ومستشار أنظمة ERP</h3>
-                    <span class="card-subtitle">Yemen Soft (Ultimate Solutions) — الخرطوم، السودان & تعز، اليمن</span>
-                    <p>تنسيق وحل المشكلات للعملاء، تدريب وتهيئة أنظمة الـ ERP الشاملة (الأستاذ العام، المخزون، المشتريات، المبيعات، الموارد البشرية، المستشفيات، العقارات، الأسطول، والصيانة).</p>
+                    <h3 data-ar="مهندس دعم فني ومستشار أنظمة ERP" data-en="Technical Support Engineer & ERP Consultant">مهندس دعم فني ومستشار أنظمة ERP</h3>
+                    <span class="card-subtitle" data-ar="Yemen Soft (Ultimate Solutions) — الخرطوم، السودان & تعز، اليمن" data-en="Yemen Soft (Ultimate Solutions) — Khartoum, Sudan & Taiz, Yemen">Yemen Soft (Ultimate Solutions) — الخرطوم، السودان & تعز، اليمن</span>
+                    <p data-ar="تنسيق وحل المشكلات للعملاء، تدريب وتهيئة أنظمة الـ ERP الشاملة (الأستاذ العام، المخزون، المشتريات، المبيعات، الموارد البشرية، المستشفيات، العقارات، الأسطول، والصيانة)." data-en="Coordinated and solved client issues, trained and implemented comprehensive ERP systems (General Ledger, Inventory, Purchasing, Sales, HR, Hospitals, Real Estate, Fleet, and Maintenance).">تنسيق وحل المشكلات للعملاء، تدريب وتهيئة أنظمة الـ ERP الشاملة (الأستاذ العام، المخزون، المشتريات، المبيعات، الموارد البشرية، المستشفيات، العقارات، الأسطول، والصيانة).</p>
                 </div>
             </div>
         </div>
@@ -77,22 +80,22 @@
     <!-- أبرز المشاريع والإنجازات -->
     <section id="projects" class="bento-section">
         <div class="container">
-            <h2>أبرز المشاريع والإنجازات</h2>
+            <h2 data-ar="أبرز المشاريع والإنجازات" data-en="Key Projects & Achievements">أبرز المشاريع والإنجازات</h2>
             <div class="projects-grid">
                 <div class="proj-card">
                     <div class="proj-icon">🏦</div>
-                    <h3>القطاع المصرفي والمالي</h3>
-                    <p>تطبيق نظام الموارد البشرية (Human Capital) في بنك الإبداع للتمويل الأصغر، بنك الاستثمار المالي، والبنك العقاري التجاري.</p>
+                    <h3 data-ar="القطاع المصرفي والمالي" data-en="Banking & Financial Sector">القطاع المصرفي والمالي</h3>
+                    <p data-ar="تطبيق نظام الموارد البشرية (Human Capital) في بنك الإبداع للتمويل الأصغر، بنك الاستثمار المالي، والبنك العقاري التجاري." data-en="Implemented Human Capital system at Ebdaa Bank for Microfinance, Financial Investment Bank, and Real Estate Commercial Bank.">تطبيق نظام الموارد البشرية (Human Capital) في بنك الإبداع للتمويل الأصغر، بنك الاستثمار المالي، والبنك العقاري التجاري.</p>
                 </div>
                 <div class="proj-card">
                     <div class="proj-icon">🏭</div>
-                    <h3>القطاع التجاري والصناعي</h3>
-                    <p>تنفيذ أنظمة ERP لمجموعة من العملاء منها مجموعات جياد الصناعية (GIAD)، سلام مارت، وأسواق يونايتد (United Market).</p>
+                    <h3 data-ar="القطاع التجاري والصناعي" data-en="Commercial & Industrial Sector">القطاع التجاري والصناعي</h3>
+                    <p data-ar="تنفيذ أنظمة ERP لمجموعة من العملاء منها مجموعات جياد الصناعية (GIAD)، سلام مارت، وأسواق يونايتد (United Market)." data-en="Implemented ERP systems for clients including GIAD Industrial Groups, Salam Mart, and United Market.">تنفيذ أنظمة ERP لمجموعة من العملاء منها مجموعات جياد الصناعية (GIAD)، سلام مارت، وأسواق يونايتد (United Market).</p>
                 </div>
                 <div class="proj-card">
                     <div class="proj-icon">🏥</div>
-                    <h3>القطاع الصحي والخدمي</h3>
-                    <p>تنفيذ أنظمة المستشفيات (مستشفى براءة)، وإدارة الأصول والصيانة في عدة شركات ومصانع كبرى.</p>
+                    <h3 data-ar="القطاع الصحي والخدمي" data-en="Healthcare & Service Sector">القطاع الصحي والخدمي</h3>
+                    <p data-ar="تنفيذ أنظمة المستشفيات (مستشفى براءة)، وإدارة الأصول والصيانة في عدة شركات ومصانع كبرى." data-en="Implemented hospital systems (Baraa Hospital) and managed asset maintenance across major companies and factories.">تنفيذ أنظمة المستشفيات (مستشفى براءة)، وإدارة الأصول والصيانة في عدة شركات ومصانع كبرى.</p>
                 </div>
             </div>
         </div>
@@ -101,18 +104,18 @@
     <!-- التعليم والأكاديمية -->
     <section id="education" class="bento-section">
         <div class="container">
-            <h2>التعليم والأكاديمية</h2>
+            <h2 data-ar="التعليم والأكاديمية" data-en="Education & Academic">التعليم والأكاديمية</h2>
             <div class="edu-grid">
                 <div class="edu-card">
                     <div class="edu-icon">🎓</div>
-                    <h3>بكالوريوس تقنية المعلومات</h3>
-                    <p class="edu-place">كلية الجزيرة التقنية — الخرطوم، السودان</p>
+                    <h3 data-ar="بكالوريوس تقنية المعلومات" data-en="Bachelor's Degree in IT">بكالوريوس تقنية المعلومات</h3>
+                    <p class="edu-place" data-ar="كلية الجزيرة التقنية — الخرطوم، السودان" data-en="Gezira College of Technology — Khartoum, Sudan">كلية الجزيرة التقنية — الخرطوم، السودان</p>
                     <span class="edu-year">2015 - 2019</span>
                 </div>
                 <div class="edu-card">
                     <div class="edu-icon">📜</div>
-                    <h3>دراسات عليا في نظم معلومات الأعمال</h3>
-                    <p class="edu-place">جامعة العلوم والتكنولوجيا (UMST) — الخرطوم، السودان</p>
+                    <h3 data-ar="دراسات عليا في نظم معلومات الأعمال" data-en="Postgraduate in Business Information Systems">دراسات عليا في نظم معلومات الأعمال</h3>
+                    <p class="edu-place" data-ar="جامعة العلوم والتكنولوجيا (UMST) — الخرطوم، السودان" data-en="UMST University — Khartoum, Sudan">جامعة العلوم والتكنولوجيا (UMST) — الخرطوم، السودان</p>
                     <span class="edu-year">2021 - 2022</span>
                 </div>
             </div>
@@ -122,16 +125,16 @@
     <!-- المهارات والتقنيات -->
     <section id="skills" class="bento-section">
         <div class="container">
-            <h2>المهارات والتقنيات</h2>
+            <h2 data-ar="المهارات والتقنيات" data-en="Skills & Technologies">المهارات والتقنيات</h2>
             <div class="skills-flex">
-                <span class="skill-pill">💻 تطوير الأنظمة والبرمجيات (Software Dev)</span>
-                <span class="skill-pill">🎨 تصميم واجهات المستخدم (UI/UX Design)</span>
-                <span class="skill-pill">⚙️ إدارة قواعد البيانات (Oracle Database & DBA)</span>
-                <span class="skill-pill">📊 أنظمة تخطيط موارد المؤسسات (ERP & Onyx)</span>
-                <span class="skill-pill">🎯 إدارة المشاريع وحل المشكلات</span>
-                <span class="skill-pill">🌐 شبكات الحاسب (CCNA Certified)</span>
-                <span class="skill-pill">📈 تحليل البيانات وأوفيس المتقدم</span>
-                <span class="skill-pill">💡 اتخاذ القرار والتواصل الفعال</span>
+                <span class="skill-pill" data-ar="💻 تطوير الأنظمة والبرمجيات (Software Dev)" data-en="💻 Software Development">💻 تطوير الأنظمة والبرمجيات (Software Dev)</span>
+                <span class="skill-pill" data-ar="🎨 تصميم واجهات المستخدم (UI/UX Design)" data-en="🎨 UI/UX Design">🎨 تصميم واجهات المستخدم (UI/UX Design)</span>
+                <span class="skill-pill" data-ar="⚙️ إدارة قواعد البيانات (Oracle Database & DBA)" data-en="⚙️ Oracle Database & DBA">⚙️ إدارة قواعد البيانات (Oracle Database & DBA)</span>
+                <span class="skill-pill" data-ar="📊 أنظمة تخطيط موارد المؤسسات (ERP & Onyx)" data-en="📊 ERP & Onyx Systems">📊 أنظمة تخطيط موارد المؤسسات (ERP & Onyx)</span>
+                <span class="skill-pill" data-ar="🎯 إدارة المشاريع وحل المشكلات" data-en="🎯 Project Management & Problem Solving">🎯 إدارة المشاريع وحل المشكلات</span>
+                <span class="skill-pill" data-ar="🌐 شبكات الحاسب (CCNA Certified)" data-en="🌐 Networking (CCNA Certified)">🌐 شبكات الحاسب (CCNA Certified)</span>
+                <span class="skill-pill" data-ar="📈 تحليل البيانات وأوفيس المتقدم" data-en="📈 Data Analysis & Advanced Office">📈 تحليل البيانات وأوفيس المتقدم</span>
+                <span class="skill-pill" data-ar="💡 اتخاذ القرار والتواصل الفعال" data-en="💡 Decision Making & Communication">💡 اتخاذ القرار والتواصل الفعال</span>
             </div>
         </div>
     </section>
@@ -139,8 +142,8 @@
     <!-- تواصل معي -->
     <section id="contact" class="bento-section contact-section">
         <div class="container text-center">
-            <h2>تواصل معي</h2>
-            <p class="contact-text">يسعدني تواصلكم المهني واستقبال الاستفسارات والمقترحات عبر القنوات التالية:</p>
+            <h2 data-ar="تواصل معي" data-en="Get in Touch">تواصل معي</h2>
+            <p class="contact-text" data-ar="يسعدني تواصلكم المهني واستقبال الاستفسارات والمقترحات عبر القنوات التالية:" data-en="I welcome your professional inquiries and messages through the following channels:">يسعدني تواصلكم المهني واستقبال الاستفسارات والمقترحات عبر القنوات التالية:</p>
             <div class="contact-links">
                 <a href="mailto:ali1996mohammed00@gmail.com" class="contact-btn">📧 ali1996mohammed00@gmail.com</a>
                 <a href="tel:+966569705091" class="contact-btn" dir="ltr">📱 +966 56 970 5091</a>
@@ -151,9 +154,36 @@
     <!-- التذييل -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 علي محمد الدربي. جميع الحقوق محفوظة.</p>
+            <p data-ar="&copy; 2026 علي محمد الدربي. جميع الحقوق محفوظة." data-en="&copy; 2026 Ali Mohammed Al-Darbi. All rights reserved.">&copy; 2026 علي محمد الدربي. جميع الحقوق محفوظة.</p>
         </div>
     </footer>
 
+    <!-- سكريبت تبديل اللغات -->
+    <script>
+        function toggleLanguage() {
+            const root = document.getElementById('html-root');
+            const langBtn = document.getElementById('lang-toggle');
+            const currentLang = root.getAttribute('lang');
+
+            if (currentLang === 'ar') {
+                root.setAttribute('lang', 'en');
+                root.setAttribute('dir', 'ltr');
+                langBtn.textContent = 'AR';
+                
+                // تحديث كل العناصر التي تحتوي على السمات
+                document.querySelectorAll('[data-en]').forEach(el => {
+                    el.textContent = el.getAttribute('data-en');
+                });
+            } else {
+                root.setAttribute('lang', 'ar');
+                root.setAttribute('dir', 'rtl');
+                langBtn.textContent = 'EN';
+                
+                document.querySelectorAll('[data-ar]').forEach(el => {
+                    el.textContent = el.getAttribute('data-ar');
+                });
+            }
+        }
+    </script>
 </body>
 </html>
