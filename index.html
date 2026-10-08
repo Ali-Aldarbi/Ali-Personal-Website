@@ -62,13 +62,13 @@
             <h2 data-ar="الخبرات العملية" data-en="Work Experience">الخبرات العملية</h2>
             <div class="cards-grid">
                 <div class="card-box">
-                    <span class="card-date">07-2023  05-2026</span>
+                    <span class="card-date" data-ar="07-2023  05-2026" data-en="07-2023  05-2026">07-2023  05-2026</span>
                     <h3 data-ar="مدير الدعم الفني وهندسة الأنظمة" data-en="Technical Support & Systems Engineering Manager">مدير الدعم الفني وهندسة الأنظمة</h3>
                     <span class="card-subtitle" data-ar="Ultimate Solution — دار السلام، تنزانيا" data-en="Ultimate Solution — Dar es Salaam, Tanzania">Ultimate Solution — دار السلام، تنزانيا</span>
                     <p data-ar="تنفيذ ودعم أنظمة شركة Ultimate Solution وتقديم الدعم الفني المتقدم وحل المشكلات التشغيلية لمختلف العملاء." data-en="Implementing and supporting Ultimate Solution systems, providing advanced technical support, and resolving operational issues for clients.">تنفيذ ودعم أنظمة شركة Ultimate Solution وتقديم الدعم الفني المتقدم وحل المشكلات التشغيلية لمختلف العملاء.</p>
                 </div>
                 <div class="card-box">
-                    <span class="card-date">11-2019  04-2023</span>
+                    <span class="card-date" data-ar="11-2019  04-2023" data-en="11-2019  04-2023">11-2019  04-2023</span>
                     <h3 data-ar="مهندس دعم فني ومستشار أنظمة ERP" data-en="Technical Support Engineer & ERP Consultant">مهندس دعم فني ومستشار أنظمة ERP</h3>
                     <span class="card-subtitle" data-ar="Yemen Soft (Ultimate Solutions) — الخرطوم، السودان & تعز، اليمن" data-en="Yemen Soft (Ultimate Solutions) — Khartoum, Sudan & Taiz, Yemen">Yemen Soft (Ultimate Solutions) — الخرطوم، السودان & تعز، اليمن</span>
                     <p data-ar="تنسيق وحل المشكلات للعملاء، تدريب وتهيئة أنظمة الـ ERP الشاملة (الأستاذ العام، المخزون، المشتريات، المبيعات، الموارد البشرية، المستشفيات، العقارات، الأسطول، والصيانة)." data-en="Coordinated and solved client issues, trained and implemented comprehensive ERP systems (General Ledger, Inventory, Purchasing, Sales, HR, Hospitals, Real Estate, Fleet, and Maintenance).">تنسيق وحل المشكلات للعملاء، تدريب وتهيئة أنظمة الـ ERP الشاملة (الأستاذ العام، المخزون، المشتريات، المبيعات، الموارد البشرية، المستشفيات، العقارات، الأسطول، والصيانة).</p>
@@ -158,7 +158,7 @@
         </div>
     </footer>
 
-    <!-- سكريبت تبديل اللغات -->
+    <!-- سكريبت تبديل اللغات وتعديل الاتجاه -->
     <script>
         function toggleLanguage() {
             const root = document.getElementById('html-root');
@@ -170,7 +170,7 @@
                 root.setAttribute('dir', 'ltr');
                 langBtn.textContent = 'AR';
                 
-                // تحديث كل العناصر التي تحتوي على السمات
+                // تحديث النصوص للغة الإنجليزية مع ضمان الاتجاه الصحيح
                 document.querySelectorAll('[data-en]').forEach(el => {
                     el.textContent = el.getAttribute('data-en');
                 });
@@ -179,6 +179,7 @@
                 root.setAttribute('dir', 'rtl');
                 langBtn.textContent = 'EN';
                 
+                // تحديث النصوص للغة العربية
                 document.querySelectorAll('[data-ar]').forEach(el => {
                     el.textContent = el.getAttribute('data-ar');
                 });

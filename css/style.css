@@ -337,6 +337,7 @@ footer {
         padding: 140px 0 60px;
     }
 }
+
 /* تنسيق زر تبديل اللغة في الشريط العلوي */
 .nav-actions {
     display: flex;
@@ -359,4 +360,37 @@ footer {
 .lang-btn:hover {
     border-color: var(--accent-pink);
     transform: scale(1.05);
+}
+
+/* دعم اتجاه اللغة الإنجليزية (LTR) وتوزيع العناصر بدقة تامة */
+html[dir="ltr"] body {
+    text-align: left;
+}
+
+html[dir="ltr"] .nav-content {
+    flex-direction: row;
+}
+
+html[dir="ltr"] section h2::after {
+    right: auto;
+    left: 0;
+}
+
+html[dir="ltr"] .job-header {
+    flex-direction: row;
+}
+
+html[dir="ltr"] .card-box:hover, 
+html[dir="ltr"] .proj-card:hover, 
+html[dir="ltr"] .edu-card:hover {
+    transform: translateY(-4px);
+}
+
+/* عزل وتصحيح محاذاة ونقاط الجمل الإنجليزية عند تغيير الاتجاه */
+html[dir="ltr"] .contact-text,
+html[dir="ltr"] .hero-desc,
+html[dir="ltr"] .about-text {
+    direction: ltr;
+    text-align: left;
+    unicode-bidi: isolate;
 }
